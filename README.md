@@ -283,6 +283,55 @@ It helps you to effectively manage administration and allows you to focus on wha
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 11-Mar-2022** 
+<h3 align='center'>Working with Dynamic pages in Frappe</h3>
+- First I need to create www directory in any Frappe app.
+- Then I need to create two files Python file for fetching data from database.
+- Other file is html file in which i use jinja template to show record on webpage.
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 12-Mar-2022** 
+<h3 align='center'>Trying to add pagination on Dynamic page</h3>
+- First try to control send data to python file from html file.
+- But this won't work then i create post on discuss Erpnext where i get answer and trying to use javascript.
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 14-Mar-2022** 
+<h3 align='center'>Learning about Fee Module in Erpnext</h3>
+- Here I get details how to create new fees for student.
+- Learning Different prerequisites before creating new fees.
+- Like Student, Fee Category, Fee Structure etc.
+ 
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 15-Mar-2022** 
+<h3 align='center'>Creating Fees in Erpnext on server</h3>
+- Creating Different Fees Categories available in school like Tution Fee, Hostle Fee etc.
+- Searching how to add bus fees based on their route.
+- Creating student, Enroll them in a program, Creating courses etc. 
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 16-Mar-2022** 
+<h3 align='center'> Creating Fee Structure</h3>
+<p align="justify">Creating  new Fees structures. So while creating new fees, fees should be added automatically by selecting Fee Structure. We are trying to add an admission fee in Student form along with this we are exploring where all the records are saved so that we keep track how many fees are paid or pending. We track this record in 'Report Student fee collection' doctype. We are also trying to add a penalty on overdue fees but we find this feature is not currently available in erpnext.</p>
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 17-Mar-2022** 
+<h3 align='center'>Solve Problem While deleting records</h3>
+<p align="justify">Yesterday I was exploring how to delete such payment entries which are linked with GL Entry. For that we need to go to Account Settings and Enable a checkbox Delete Accounting and Stock Ledger Entries on the deletion of Transaction and then all such Cancelled entries deleted normally.</p>
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 19-Mar-2022** 
 <h3 align='center'></h3>
 
 <br>

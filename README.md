@@ -326,7 +326,7 @@ It helps you to effectively manage administration and allows you to focus on wha
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 17-Mar-2022** 
 <h3 align='center'>Solve Problem While deleting records</h3>
-<p align="justify">Yesterday I was exploring how to delete such payment entries which are linked with GL Entry. For that we need to go to Account Settings and Enable a checkbox Delete Accounting and Stock Ledger Entries on the deletion of Transaction and then all such Cancelled entries deleted normally.</p>
+<p align="justify">I'm exploring how to delete such payment entries which are linked with GL Entry. For this we need to go to Account Settings and Enable a checkbox Delete Accounting and Stock Ledger Entries on the deletion of Transaction and then all such Cancelled entries deleted normally.</p>
 
 <br>
 

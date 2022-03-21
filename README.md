@@ -332,6 +332,16 @@ It helps you to effectively manage administration and allows you to focus on wha
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 19-Mar-2022** 
-<h3 align='center'></h3>
+<h3 align='center'>Add Frappe app in repository</h3>
+- First I go through the git documentation, so that every thing done properly.
+- In add on I'm finding a command how to add repositiory from terminal to github.
+- After doing task completely I made documentation on github pages so that it help other team-members
+- For Documentation [Click here](https://vishal78626.github.io/Add-Frappe-app-in-GitRepo/) 
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 21-Mar-2022** 
+<h3 align='center'>Understand the code available in Frappe</h3>
+<p align="justify">Understanding the code available in all-products, then we are trying to add items in item lists, then we face problem after few search then we add items in (item lists), then add item in (website item), then setting up e-commerce settings now we successfully use search, prev & next. Now we are trying to apply it in a pagination file.</p>
 
 <br>

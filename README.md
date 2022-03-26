@@ -348,30 +348,41 @@ It helps you to effectively manage administration and allows you to focus on wha
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 22-Mar-2022** 
-<h3 align='center'></h3>
+<h3 align='center'>Installing new Erpnext on server</h3>
+- First we install frappe framework then install erpnext with education domain.
+- After this we are collecting students and teachers data from Nankana Sahib Public School.
+- Arranging data according to doctype in erpnext.  
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 23-Mar-2022** 
-<h3 align='center'></h3>
-
-<br>
+<h3 align='center'>Arrange naming series company wise</h3>
+<p align="justify">While new applicant is registered in system by default system generate naming series. We are trying to change it company wise For eg. if we are member of company A, then naming series include A-2022-00001.For this we follow official erpnext tutorial [more detail].(https://docs.erpnext.com/docs/v13/user/manual/en/customize-erpnext/articles/company-wise-naming-series#:~:text=The%20need%20is%20to%20create,be%20SINV%2DB%2D0001). Using this we get error the we take reference from other discuss.erpnext where we use (.abbr.-.YYYY.-) in option of Naming Series. 
+ 
+ <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 24-Mar-2022** 
-<h3 align='center'></h3>
-
+<h3 align='center'>Arranging Student data</h3>
+- As there are large data of students in school we need to make it correct.
+- so we all divide work in team and understanding the concept of filter, concatinate etc. in excel.
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 25-Mar-2022** 
-<h3 align='center'></h3>
+<h3 align='center'>Learning Employee Salary module</h3>
+- For Employee or Teacher salary I need to lean Payroll module in Erpnext.
+- In this I learn Payroll Period, Income Tax Slab, Salary Component and Structure, Generating Salary Recipt.
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 26-Mar-2022** 
-<h3 align='center'></h3>
+<h3 align='center'>Implementing Payroll in Erpnext</h3>
+- First Create Salary Component where i create New Component type as Earning and create PF as Deduction and add base amount in condition section.
+- Create Salary Structure with Earning and Deduction, Selecting account,Payroll Frequency as montly, daily, weekly etc.
+- In New Salary Structure Assignment we assign employee to Salary Structure.
+- After this we go to Salary slip here i need to create holiday list and assign holiday to company then we successfully generate salary slip.
 
 <br>

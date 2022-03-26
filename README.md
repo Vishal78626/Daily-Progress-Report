@@ -363,10 +363,11 @@ It helps you to effectively manage administration and allows you to focus on wha
  <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 24-Mar-2022** 
+**Date : 24-Mar-2022**
 <h3 align='center'>Arranging Student data</h3>
 - As there are large data of students in school we need to make it correct.
 - so we all divide work in team and understanding the concept of filter, concatinate etc. in excel.
+
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->

@@ -345,3 +345,33 @@ It helps you to effectively manage administration and allows you to focus on wha
 <p align="justify">Understanding the code available in all-products, then we are trying to add items in item lists, then we face problem after few search then we add items in (item lists), then add item in (website item), then setting up e-commerce settings now we successfully use search, prev & next. Now we are trying to apply it in a pagination file.</p>
 
 <br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 22-Mar-2022** 
+<h3 align='center'></h3>
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 23-Mar-2022** 
+<h3 align='center'></h3>
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 24-Mar-2022** 
+<h3 align='center'></h3>
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 25-Mar-2022** 
+<h3 align='center'></h3>
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 26-Mar-2022** 
+<h3 align='center'></h3>
+
+<br>

@@ -390,3 +390,11 @@ Using this we get error the we take reference from other discuss.erpnext where w
 - After this we go to Salary slip here i need to create holiday list and assign holiday to company then we successfully generate salary slip.
 
 <br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 26-Mar-2022** 
+<h3 align='center'>Payroll Entry in Erpnext</h3>
+- In payroll entry we can create salary for bulk of employee.
+- For payroll entry we have an attendance of employees, only then we can create payroll entry for employee.  
+
+<br>

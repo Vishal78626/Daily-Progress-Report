@@ -392,9 +392,51 @@ Using this we get error the we take reference from other discuss.erpnext where w
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 26-Mar-2022** 
+**Date : 28-Mar-2022** 
 <h3 align='center'>Payroll Entry in Erpnext</h3>
 - In payroll entry we can create salary for bulk of employee.
 - For payroll entry we have an attendance of employees, only then we can create payroll entry for employee.  
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 29-Mar-2022**
+<h3 align='center'>Web Manager Vs Website Manager</h3>
+- For new users we create web manger who has permission to create webpage,See on website, Search box, can't create webform.
+- Website Manager can delete webpage, read webpage but cannot create, Search bar not shown.
+- We assign new user web user so that they can access gne11 website with some restriction.
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 30-Mar-2022**
+<h3 align='center'>Adding New role and Give Permission to new Users</h3>
+- When we got new user for allow them to create Library Management System we need to give them the access of doctype modules.
+- For this we go to doctype list and create new role where new user create doctype by can't delete doctype.
+- Similarly for Module we use select permission where user can select module but can't read module.
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 1-Apr-2022**
+<h3 align='center'>Working with Client Script in Form</h3>
+- Client Script is script in which we add some action on form so that we validate data or do other function.
+- Webform script is which is done in webform while creating new webform.
+- For Reference we use Web form Scripting Documentation [Click here](https://frappeframework.com/docs/v13/user/en/api/form) 
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 2-Apr-2022**
+<h3 align='center'>Sending Daily report to Student Group</h3>
+- For Sending daily report in student group First we add student and Intructor in student group with batch name.
+- Then we create email group and add students email where we send them email at same time.
+- In Student group on view option we create new newsletter with content and add email group then we are able to send email to group of Student.
+ 
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 5-Apr-2022**
+<h3 align='center'></h3>
 
 <br>

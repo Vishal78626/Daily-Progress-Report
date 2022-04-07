@@ -437,6 +437,27 @@ Using this we get error the we take reference from other discuss.erpnext where w
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 5-Apr-2022**
+<h3 align='center'>Trying to create Daily Daity without using email</h3>
+- For this first we create a doctype.
+- Trying to add permission in doctype so that only student group can access these Dairy.
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 6-Apr-2022**
+<h3 align='center'>Trying to make pagination and filter on webpage</h3>
+- First we are's trying to read built-in frappe file so that we can use it in webpage.
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 7-Apr-2022**
+<h3 align='center'></h3>
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 8-Apr-2022**
 <h3 align='center'></h3>
 
 <br>

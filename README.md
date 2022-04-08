@@ -445,14 +445,20 @@ Using this we get error the we take reference from other discuss.erpnext where w
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 6-Apr-2022**
-<h3 align='center'>Trying to make pagination and filter on webpage</h3>
-- First we are's trying to read built-in frappe file so that we can use it in webpage.
+<h3 align='center'>Creating Library Management System</h3>
+- As per official documentation I create Library Management App.
+- Install app on site then creating doctype.
+- Use Features like Naming Series, Permission Rules.
+- Learn Controller methods, Doctype Features, Form Scripts.
+- Adding Web view for preview Articles on web.
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 7-Apr-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Trying to make pagination and filter on webpage</h3>
+- First we are's trying to read built-in frappe file so that we can use it in webpage.
+- Make changes in built in files to apply it on global in frappe.
 
 <br>
 

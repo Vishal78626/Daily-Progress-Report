@@ -490,6 +490,10 @@ Using this we get error the we take reference from other discuss.erpnext where w
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 12-Apr-2022**
 <h3 align='center'>Learning Permission for Human Resource & Payroll</h3>
+- For Finding permission rule of HR Role we create a user in Erpnext.
+- Then assign HR User role to new user and find what permissions are available.
+- After this we use HR manager Role and learn its role for Human Resource & Payroll.
+- We find that HR manager has more power than HR user in some case like to delete and cancel records etc. 
 
 <br>
 

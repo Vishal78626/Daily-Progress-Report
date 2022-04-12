@@ -464,6 +464,37 @@ Using this we get error the we take reference from other discuss.erpnext where w
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 8-Apr-2022**
+<h3 align='center'>Making Questions based on Library Management Tutorial</h3>
+- The Topics for preparing questions for trainee are Creating Apps, Sites & Doctype.
+- Making mcq question's based on steps followed when creating Library management system.
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 9-Apr-2022**
+<h3 align='center'>Learning bash script</h3>
+- As per Questions Created for Trainee it contain different format.
+- Then I need to create bash script using sed to find and replace the wrong format symbols.
+- The example of sed command is 'sed 's/$ //gI' filename'. 
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 11-Apr-2022**
+<h3 align='center'>Learning Human Resource Module</h3>
+<p align='justify'>The Human Resources (HR) module covers the processes related to the HR department of a company. It maintains a complete employee database including contact information, salary details, attendance, performance evaluation, leaves, and appraisal records.The most important feature here is processing the payroll by using Payroll Entry to generate Salary Slips. Most countries have complex tax rules stating which expenses the company can make on behalf of its Employees.</p>
+<p align='justify'>There are a set of rules for the company to deduct taxes and social security from employee payroll. ERPNext accommodates all types of taxes and their calculation.</p>
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 12-Apr-2022**
+<h3 align='center'>Learning Permission for Human Resource & Payroll</h3>
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 13-Apr-2022**
 <h3 align='center'></h3>
 
 <br>

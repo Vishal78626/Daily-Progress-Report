@@ -508,9 +508,3 @@ Using this we get error the we take reference from other discuss.erpnext where w
 <h3 align='center'></h3>
 
 <br>
-
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 16-Apr-2022**
-<h3 align='center'></h3>
-
-<br>

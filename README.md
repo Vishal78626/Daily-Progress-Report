@@ -499,12 +499,11 @@ Using this we get error the we take reference from other discuss.erpnext where w
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 13-Apr-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Email Notification for every push operation</h3>
+- For this we need to go inside the repository settings.
+- Go to Integration section, Add email address the limitation is only two email address are used there.
+- To solve this notification, We find one more solution where in commit section optional description.
+- We can add the user profile name where we want to send email notification. 
 
 <br>
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 15-Apr-2022**
-<h3 align='center'></h3>
-
-<br>

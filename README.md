@@ -507,3 +507,13 @@ Using this we get error the we take reference from other discuss.erpnext where w
 
 <br>
 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 16-Apr-2022**
+<h3 align='center'>Working on Daily Dairy as per new specification</h3>
+- First we create new app named Daily Dairy.
+- Create new doctype under new app Daily Dairy Class1.
+- Creating fields and write some code for add fields automatically.
+- Now we are working on permission how to show it to only specific group.
+
+<br>
+

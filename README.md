@@ -517,3 +517,51 @@ Using this we get error the we take reference from other discuss.erpnext where w
 
 <br>
 
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 18-Apr-2022**
+<h3 align='center'>Creating Daily Diary module in Notification App</h3>
+- Installing Notification app on local system.
+- Creating module named Daily Diary save it on notification app.
+- Then push app on other team-mate github repository. 
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 19-Apr-2022**
+<h3 align='center'>Adding app on friend Repository</h3>
+- First I fork Repository in my Repository.
+- Install App on another local system then made changes on notification app like adding some code and fields.
+- Then again push code in my github Repository.
+- Create new pull request for Repository where I Frok Repository & Merge changes in main Repository.
+- But when we use desk there is no changes in desk as per changes on git, then we check the local directory changes must there but it can't refelect in frappe.
+- So here we again remove app and again install app & this time chnages work properly.
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 20-Apr-2022**
+<h3 align='center'>Adding Filters on doctype as per requirement</h3>
+- As per requirement changes for achieve this we add filter in list-view like class-wise, subject-wise, date-wise filter.
+- For creating filters on desk we need to go to Doctype.
+- On click edit we need check option In List View, In Standard Filter.
+- Then on save changes filters are available on desk list-view of doctype.
+
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 21-Apr-2022**
+<h3 align='center'>Adding Role and permission to Users</h3>
+- When all the task done then we find Roles and permission for Daily Diary Doctype.
+- For this we add new user whom we give role Student and create new role under Doctype named DocPerm Who has permission to read.
+- In Daily Diary Doctype we give read permission to Student and all permission to Instructor.
+- Then assign Two Role to new user 'Student' + 'Docperm' for student & 'Instructor' + 'Docperm' for Instructor.
+- Also we restrict user from Modules.       
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 22-Apr-2022**
+<h3 align='center'></h3>
+
+<br>

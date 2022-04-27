@@ -565,7 +565,10 @@ Using this we get error the we take reference from other discuss.erpnext where w
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 22-Apr-2022**
-<h3 align='center'>Create</h3>
+<h3 align='center'>Making new specification and Flow for Noticeboard App</h3>
+- First Notice will be created by CLERK then it will be in draft state.
+- In this state only CLERK and HOD can create notice no one else able to create notice.
+- Another requirement CLERK and HOD of their department able to create notice for their respective department. 
 
 <br>
 

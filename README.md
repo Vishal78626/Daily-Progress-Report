@@ -565,33 +565,45 @@ Using this we get error the we take reference from other discuss.erpnext where w
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 22-Apr-2022**
-<h3 align='center'>Making new specification and Flow for Noticeboard App</h3>
-- First Notice will be created by CLERK then it will be in draft state.
-- In this state only CLERK and HOD can create notice no one else able to create notice.
-- Another requirement CLERK and HOD of their department able to create notice for their respective department. 
+<h3 align='center'>Creating web template for display Diary using Bootstrap-4</h3>
+- Learn how to use bootstrap in frappe web template.
+- By using Bootstrap class create web page which is responsive and give good look to our template.
+- Apply different designing like borders, text color classes, actions on link.  
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 23-Apr-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Making new specification and Flow for Noticeboard App</h3>
+- Notice will be created by CLERK then it will be in draft state.
+- CLERK and HOD can create notice no one else from other department able to create notice for their department.
+- Another requirement when notice is created by clerk It will be in Draft state when Hod Submit Notice only then it would be published.
+- Naming Series of notice maintained department wise eg: Notice-CSE/2022/00001, Notice-CIVIL/2022/00001.
+- If HOD Cancel the notice then Clerk is able to make changes then again send it to HOD.  
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 25-Apr-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Creating doctype in Existing Noticeboard App</h3>
+- In First approach we decide to use create doctype and apply workflow on it.
+- Where all states are defined like Approve by hod, Draft etc.
+- We allote Department to their Respective Hod and Clerk  So that they are able to create notice.
+- Every thing Works fine but When we apply some code then workflow states create problem. eg data is saved but changes apply with delay.
+- We find workflow also make task for app difficult because its file is not created inside the app that why it portability is difficult.
+- So we decide to work without workflow also learn new things from mistakes.   
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 26-Apr-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Naming Series as Department wise</h3>
+-
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 27-Apr-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Fetching HOD by using variables in query</h3>
 
 <br>

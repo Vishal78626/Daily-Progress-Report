@@ -616,7 +616,7 @@ Using this we get error the we take reference from other discuss.erpnext where w
 - So we use another optimized version of query.
 ```.py
 department = self.department
-		requiredRole = "Hod" 
+requiredRole = "Hod" 
 		
 		self.hod = frappe.db.sql(f""" select full_name 
 			from `tabUser` 

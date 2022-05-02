@@ -598,12 +598,59 @@ Using this we get error the we take reference from other discuss.erpnext where w
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 26-Apr-2022**
 <h3 align='center'>Naming Series as Department wise</h3>
--
+- Assigning department to Hod & Clerk to one department in User Permission List.
+- We use condition like cse = department_name.
+- Department_name is fetched from doctype use function self.fieldname.
+- After apply such condition we use make_autoname function.
+- self.name = make_autoname('NOTICE-'+'CSE'+'/'+'.YYYY.'+'/'+'.#####')
+- This function return series 'NOTICE-CSE/2022/00001'
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 27-Apr-2022**
 <h3 align='center'>Fetching HOD by using variables in query</h3>
+- First we use Simple Frappe query "frappe.db.get_value('User', 'hodcse@gmail.com', 'full_name')".
+- But this depends upon the email of hod if email will change in future then we need to change it.
+- Also we have to wrote this many times.
+- So we use another optimized version of query.
+```.py
+  
+  department = self.department
+		requiredRole = "Hod" #Role 
+		
+		self.hod = frappe.db.sql(f""" select full_name 
+			from `tabUser` 
+			where `email` IN (select user 
+			from `tabUser Permission` 
+			where `for_value`="{department}" AND `user` IN (select parent 
+			from `tabHas Role` 
+			where `role`="{requiredRole}" )) """)
+```
+
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 28-Apr-2022**
+<h3 align='center'></h3>
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 29-Apr-2022**
+<h3 align='center'></h3>
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 30-Apr-2022**
+<h3 align='center'></h3>
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 2-May-2022**
+<h3 align='center'></h3>
 
 <br>

@@ -626,25 +626,42 @@ requiredRole = "Hod"
 			from `tabHas Role` 
 			where `role`="{requiredRole}" )) """)
 ```
-
+- By using this query with variable we are able to use this for all departments.
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 28-Apr-2022**
-<h3 align='center'></h3>
+<h3 align='center'>New Fee requirent</h3>
+- First we Create Fee Categories Like Development Fee, Tutuion Fee, Transportation fee.
+- Creating Fee Structure For Different Classes and it depends on siblings fee.
+- Like If a Student has one sibling than Tution fees would be 50% discount, If there are two Siblings than Tution Fee would be 25%.
+- Transportation Fee depends on various routes eg Bus Fee for Route1 : 500/- than Fee for Route2 : 400/-.
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 29-Apr-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Implementing Fee on local server</h3>
+- First we import data like Program, student, courses.
+- Creating Fee category as per requirement Development Fee, Tution Fee, Transporatation Fee.
+- Finding a way how to link siblings of same school using minimal customization.
+- We set up students who have siblings but when we select option siblings studying in the same school then we are able to select students from available students but the program is not fetched.
+- Along with this We find the received income cost center is also set in schedule. We can find all the income in the Fee cost center.
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 30-Apr-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Try to optimize Notice.py Code</h3>
+- As we use department for naming series so for this we have to change code when department and its abbrivation changed.
+- To Remove this we add department abbrivation field in doctype.
+- With following query abbr depends upon the department abbrivation also we haven't make changes in code also code become more simple than previous code.  
+```.py
+department=self.department
+abbr=frappe.db.get_value( 'Department' , department ,'department_abbreviation' )
+self.name=make_autoname( 'NOTICE-' + abbr + '/' + '.YYYY.' + '/' + '.#####' )
+```
 
 <br>
 

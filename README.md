@@ -615,16 +615,17 @@ Using this we get error the we take reference from other discuss.erpnext where w
 - Also we have to wrote this many times.
 - So we use another optimized version of query.
 ```.py
-department = self.department
-requiredRole = "Hod" #Role 
 
-self.hod = frappe.db.sql(f""" select full_name 
-from `tabUser` 
-where `email` IN (select user 
-from `tabUser Permission` 
-where `for_value`="{department}" AND `user` IN (select parent 
-from `tabHas Role` 
-where `role`="{requiredRole}" )) """)
+ department = self.department
+ requiredRole = "Hod" #Role 
+
+ self.hod = frappe.db.sql(f""" select full_name 
+  from `tabUser` 
+  where `email` IN (select user 
+  from `tabUser Permission` 
+  where `for_value`="{department}" AND `user` IN (select parent 
+  from `tabHas Role` 
+  where `role`="{requiredRole}" )) """)
 ```
 
 

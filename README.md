@@ -676,6 +676,51 @@ self.name=make_autoname( 'NOTICE-' + abbr + '/' + '.YYYY.' + '/' + '.#####' )
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 2-May-2022**
+<h3 align='center'>Creating Roles and permissions</h3>
+
+- Creating Director Role and add permission for Viewing accounts, payroll, Employee details etc.
+- Customize Deskview for Director Role.
+- Creating Principal Role and add all academic views for Principal.
+- Creating Instructor Role and allow all permissions needed to do their tasks.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 3-May-2022**
+<h3 align='center'>Learn Different Salary component for Employee Salary</h3>
+
+- Basic Pay of employee as per college pay scale.
+- Add 5% Interim Relief in Basic pay.
+- Adding Dearness allowance 142% in Basic Pay.
+- Medical Allowance,CCA,PF(10%),HRA.
+- These all are Earning in salary.
+- Then we add Deduction component like PF(20%),Development tax, GI, SML, SMAF.
+- By calculating all Earning & Deduction, we get Net Paid Amount. 
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 4-May-2022**
+<h3 align='center'>Creating Salaries</h3>
+
+- First we create salary component which are fixed these are declared in Salary Component.
+- Next Create Salary Structure in which we group all Salary Component which are earning and deduction components.
+- Setting up formula on Basic Pay like calculate IR(5%), ADA(142%) etc.
+- After Successfully creating salary structure assigning it to employee where we define the Basic pay of Employee.
+- At last in Salary Slip we select employee to whom we assign salary then salary structure automatically fetched and calculate base salary.    
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 5-May-2022**
+<h3 align='center'>Creating Presentation with Other Team-mates in Reveal.JS</h3>
+
+- Review all work which is done by us.
+- Creating presentation add all Salary Components required.
+- Add how Desk is visible for different Roles.
+- What is visible to all student.
+- Explaing other modules like Accounts, Assets, Payroll, Human Resource, Education Domain.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 6-May-2022**
 <h3 align='center'></h3>
 
 <br>

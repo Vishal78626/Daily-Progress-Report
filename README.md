@@ -721,26 +721,41 @@ self.name=make_autoname( 'NOTICE-' + abbr + '/' + '.YYYY.' + '/' + '.#####' )
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 6-May-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Working on Mentor-Mentee Task without erpnext</h3>
 
+- Creating new database in which three tables Mentor, Mentee & Relation.
+- Import data in these tables using csv files through terminal.
+- Make connection of database with python file.
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 7-May-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Install and use Flask</h3>
 
+- As we need to show detail on webpage using jinja templating.
+- After few searches we decide to use flask as a framework which render jinja template for html file.
+- Again Make connection with database, but this time as adviced by teacher. we need to hide credential from public so that we push it on git.
+- For hiding credentials we load details from another python file.
+- Write basic hello world program and render it using jinja templating.
 <br>
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 8-May-2022**
-<h3 align='center'></h3>
-
-<br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 9-May-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Showing detail in html file using jinja</h3>
 
+- Creating a templates folder inside flask app where all the html files put together
+- Make a funtion in which we put query select Mentor name from mentor table.
+- Then render template with data and file name in which template is shown
+```py
+@app.route('/')
+def example():
+    cur.execute("SELECT Name FROM Mentor")
+    data = cur.fetchall()
+    return render_template('index.html', output = data)
+```
+- cur.execute is used for query and cur.fetchall() fetch all names from mentor table.
+- And at the end funtion return render template in which filename, and assign data to output variable.
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->

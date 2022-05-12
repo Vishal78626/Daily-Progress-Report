@@ -767,7 +767,7 @@ def example():
 - row[0] is used for show data without braces.
 - jinja template code with Bootstrap
 
-```html
+```jinja
 <!DOCTYPE html>
 <html lang="en">
   <head>

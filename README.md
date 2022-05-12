@@ -859,11 +859,25 @@ calculate_total_amount: function(frm) {
 	console.log(grand_total)
 	frm.set_value("grand_total", grand_total);
 }
+
+frappe.ui.form.on("Bus Component", {
+	amount: function(frm) {
+		frm.trigger("calculate_total_amount");
+	}
+});
 ```
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 12-May-2022**
-<h3 align='center'>Make </h3>
+<h3 align='center'>Make changes for in fee files to save data at backend</h3>
 
+- First write code in api.py file create whitelist() where we use condition if bus component available.
+- Then use it in Javascript file as function where we call api.py and sending data field data to function.
+- Now in fee.py we calculate the bus component in loop and send grand total in database throught which we succesfully generate receipt with correct calculations.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 13-May-2022**
+<h3 align='center'>Make changes for in fee files to save data at backend</h3>
 <br>

@@ -827,7 +827,7 @@ def example():
 - For which First we create two doctype one in which Route detail with Fees is stored and second is child doctype called Bus component which is fetched in Fee doctype.
 - Then Apply changes in Bus component like fetch value from Route detail doctype.
 - For calculating total bus component and fee component we have to write some code in fee.js file.
-```html
+```js
 calculate_total_amount: function(frm) {
 	var grand_total0 = 0, grand_total1 = 0, grand_total = 0;
 

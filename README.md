@@ -764,17 +764,9 @@ def example():
 
 - Jinja template code for showing data on webpage. 
 - In the below code under block content section we run a loop which fetch data from flask app.
-- row is used for show data without braces.
+- row[0] is used for show data without braces.
 ```html
-{% block content %}
-{% for row in output %}
-    <ul id="id1">
-        <a href="/mentor1">
-        <li>{{ row[0] }}</li>
-        </a>
-    </ul>   
-{% endfor %}     
-{% endblock %} 
+ 
 ```
 
 - jinja template code with Bootstrap

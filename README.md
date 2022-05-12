@@ -760,6 +760,110 @@ def example():
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 10-May-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Showing Data on Webpage with Jinja and Bootstrap code</h3>
+
+- Jinja template code for showing data on webpage. 
+- In the below code under block content section we run a loop which fetch data from flask app.
+- row[0] is used for show data without braces.
+```jinja
+{% block content %}
+{% for row in output %}
+    <ul id="id1">
+        <a href="/mentor1">
+        <li>{{ row[0] }}</li>
+        </a>
+    </ul>   
+{% endfor %}     
+{% endblock %} 
+```
+- jinja template code with Bootstrap
+```jinja
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Mentor Name</th>
+          <th scope="col">Mentee Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr rowspan="4">
+          <td class="border">{{ mentor }}</td>          
+          <td class="border">
+          {% for row in output1 %}         
+            {{ row[0] }}              
+            <br>
+          {% endfor %}
+        </td>
+        </tr>
+        
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
+```
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 11-May-2022**
+<h3 align='center'>Adding bus Fee in Fee doctype of erpNext</h3>
+
+- By default we have Fee component in which all fee categories are fetched but as per our requirement we need to add bus fee which is different for each student.
+- For which First we create two doctype one in which Route detail with Fees is stored and second is child doctype called Bus component which is fetched in Fee doctype.
+- Then Apply changes in Bus component like fetch value from Route detail doctype.
+- For calculating total bus component and fee component we have to write some code in fee.js file.
+```js
+calculate_total_amount: function(frm) {
+	var grand_total0 = 0, grand_total1 = 0, grand_total = 0;
+
+	for(var i=0;i<frm.doc.components.length;i++) {
+		if( frm.doc.components[i].amount >= 0){
+			grand_total0 += frm.doc.components[i].amount;
+		}
+		else{
+			grand_total0 = 0;
+		}
+	}
+
+	if(frm.doc.bus_components.length == 0)
+	{
+		grand_total1 = 0;
+	}
+	if(frm.doc.bus_components.length >= 1)
+	{
+	for(var i=0;i<frm.doc.bus_components.length;i++) {
+		if( frm.doc.bus_components[i].amount > 0){
+			grand_total1 += frm.doc.bus_components[i].amount;
+		}
+		else{
+			grand_total1 = 0;
+		}
+	}
+	}
+	grand_total = grand_total0 + grand_total1;
+	console.log(grand_total)
+	frm.set_value("grand_total", grand_total);
+}
+```
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 12-May-2022**
+<h3 align='center'>Make </h3>
 
 <br>

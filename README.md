@@ -765,7 +765,7 @@ def example():
 - Jinja template code for showing data on webpage. 
 - In the below code under block content section we run a loop which fetch data from flask app.
 - row[0] is used for show data without braces.
-```jinja
+```html
 {% block content %}
 {% for row in output %}
     <ul id="id1">
@@ -777,8 +777,8 @@ def example():
 {% endblock %} 
 ```
 - jinja template code with Bootstrap
-```jinja
-<!doctype html>
+```html
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -827,7 +827,7 @@ def example():
 - For which First we create two doctype one in which Route detail with Fees is stored and second is child doctype called Bus component which is fetched in Fee doctype.
 - Then Apply changes in Bus component like fetch value from Route detail doctype.
 - For calculating total bus component and fee component we have to write some code in fee.js file.
-```js
+```html
 calculate_total_amount: function(frm) {
 	var grand_total0 = 0, grand_total1 = 0, grand_total = 0;
 

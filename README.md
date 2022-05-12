@@ -827,6 +827,45 @@ def example():
 - For which First we create two doctype one in which Route detail with Fees is stored and second is child doctype called Bus component which is fetched in Fee doctype.
 - Then Apply changes in Bus component like fetch value from Route detail doctype.
 - For calculating total bus component and fee component we have to write some code in fee.js file.
+```js
+calculate_total_amount: function(frm) {
+	var grand_total0 = 0, grand_total1 = 0, grand_total = 0;
+
+	for(var i=0;i<frm.doc.components.length;i++) {
+		if( frm.doc.components[i].amount >= 0){
+			grand_total0 += frm.doc.components[i].amount;
+		}
+		else{
+			grand_total0 = 0;
+		}
+	}
+
+	if(frm.doc.bus_components.length == 0)
+	{
+		grand_total1 = 0;
+	}
+	if(frm.doc.bus_components.length >= 1)
+	{
+	for(var i=0;i<frm.doc.bus_components.length;i++) {
+		if( frm.doc.bus_components[i].amount > 0){
+			grand_total1 += frm.doc.bus_components[i].amount;
+		}
+		else{
+			grand_total1 = 0;
+		}
+	}
+	}
+	grand_total = grand_total0 + grand_total1;
+	console.log(grand_total)
+	frm.set_value("grand_total", grand_total);
+}
+
+frappe.ui.form.on("Bus Component", {
+	amount: function(frm) {
+		frm.trigger("calculate_total_amount");
+	}
+});
+```
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->

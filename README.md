@@ -870,5 +870,38 @@ frappe.ui.form.on("Bus Component", {
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 13-May-2022**
-<h3 align='center'>Make changes for in fee files to save data at backend</h3>
+<h3 align='center'>Understand the Salary Structure of different employees</h3>
+
+- We are going to Accounts Department for understanding Salary structure of different employees.
+- Understand their requirement related to salary like for different employee, there should be different grade pay.
+- So they want they have customize option to add grade pay or not.
+- They want also seprate record file for provident fund record of employees, provident fund loan record file.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 14-May-2022**
+<h3 align='center'>Learning Salary Component for New Requirement</h3>
+
+- First when we change our company from NSPS to GNDEC.
+- Then all the Salary Components of employee are visisble in Salary Components but are not shown in Salary structure.
+- After that we are finding some other solution so that we can use same structure in two companies. 
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 16-May-2022**
+<h3 align='center'>Creating Salary Component</h3>
+
+- According to new requirement different category employees have different components.
+- Now same salary component can have different value for two employees like SML for accounts employee and teaching employee are different.
+- We are creating all Salary Components without any value so that we can modifying it later in Salary Structure.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 17-May-2022**
+<h3 align='center'>Creating Salary Structure</h3>
+
+- After Creating all Salary components which are combined for all the employees.
+- Now we are creating Salary Structure which is the combination of Salary Components in which we list all Earning and deduction components.
+- In this we set formula that if basic pay is assigned to employee during the assignment of Salary Structure and Grade pay is added to employee when generating Salary Slip only then all the Earning and deduction components are calculated.
+- The calculation is done when we save the salary slip in draft state after submit we can't modify it but in draft state we can made any changes at any time like adding or deleting components.
 <br>

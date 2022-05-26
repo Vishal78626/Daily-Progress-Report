@@ -917,11 +917,6 @@ frappe.ui.form.on("Bus Component", {
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 20-May-2022**
-<h3 align='center'></h3>
-<br>
-
-<!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 21-May-2022**
 <h3 align='center'></h3>
 <br>
@@ -933,12 +928,24 @@ frappe.ui.form.on("Bus Component", {
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 24-May-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Sending Messages to specific Students using ERPNext</h3>
+
+- Creating New Email Group Add Subscribers to whom we want to send emails.
+- We can them in a bluk by writing their emails.
+- After adding subscriber Create New newsletter in which we have to add email group which is created.
+- Then add Subject and Message also we have option to test this message by sending to only one specific user.
+- Save the newsletter we have another option schedule sending mail automatically.  
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 25-May-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Creating Collapse view without using ErpNext Desk using Bootstrap</h3>
+
+- First we create collapse multiple tab effect with bootstrap and html.
+- In which we use bootstrap classes with html tags.
+- Then our next task is to put in erpnext directory and run it with jinja templating.
+- For this we remove all html starting tags and bootstrap cdn links because frappe also uses Bootstrap-4 classes.
+- Replace Html starting tags with jinja starting template and trying to fetch data from database.
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->

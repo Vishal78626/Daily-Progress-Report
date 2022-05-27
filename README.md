@@ -909,11 +909,21 @@ frappe.ui.form.on("Bus Component", {
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 18-May-2022**
 <h3 align='center'>Display General ledger entry for Fee Record</h3>
+
+- Goto Accounting Module then goto General Ledger section.
+- Select your Company, Select from date, to date for which you want to show Entries.
+- Select Group by Account, Group by Party, Group by Voucher view.
+- Now you are able to view all the record here you have all debit, credit and balance record.  
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 19-May-2022**
 <h3 align='center'>Collecting Fees in one Fee Head</h3>
+
+- For creating new Fee collection head Create new Account.
+- Add account name, Select Company name, Currency type.
+- Select Balance type (Debit or Credit), Select Parent account type (Income account or Expenses account).
+- After Creating head verify it in Company Cost center, while creating new Fee slip under Accounting Section select income account in which you want to add new fees.
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->

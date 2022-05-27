@@ -918,7 +918,7 @@ frappe.ui.form.on("Bus Component", {
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 19-May-2022**
-<h3 align='center'>Collecting Fees in one Fee Head</h3>
+<h3 align='center'>Collecting Fees in one Fee Cost Center</h3>
 
 - For creating new Fee collection head Create new Account.
 - Add account name, Select Company name, Currency type.
@@ -930,13 +930,17 @@ frappe.ui.form.on("Bus Component", {
 **Date : 21-May-2022**
 <h3 align='center'>Displaying Fees different head-wise like tution fee, Development fee</h3>
 
+- Goto Fee list under Education domain.
+- Under list view option select report view, Select Add group option here select Fee Category under Fee Component
+- Then Add sum Filter and in third field Select Amount or grand total or outstanding.
+- Now you are able to see all fee collected head wise like Tution Fee, Development Fee, Bus Fee.
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 23-May-2022**
 <h3 align='center'>Generating School Leaving Certificate</h3>
 
--
+For creating new school leaving certificate format goto print format. For Adding new print format select student doctype for which you want to create school leaving certificate, Select education module select format as standard format or not we use 'NO' option because this format is only used when we want to generate school leaving certificate. Use custom css for designing logo of company for fetching student name we use doc.first_name. For fetching class name we use frappe function, frappe.db.get_value('Program Enrollment', doc.student, 'program'). 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -963,7 +967,9 @@ frappe.ui.form.on("Bus Component", {
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 26-May-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Automation of Fee Creation of the Students</h3>
+
+Once we created the fee of teh student for a single month now we have a problem is that we have to repeat the task again for every month so we need to automate this process in order to provide the clean and efficient approach.So we automate this process with auto-repeat tool and makes evry student fee on repeat once it created. It will automatically created after every month and we set the due date 15 days ahed of the date of creation of the fee so the status of the fee will be changes to overdue after due date.
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->

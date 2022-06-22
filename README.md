@@ -974,20 +974,81 @@ Once we created the fee of teh student for a single month now we have a problem 
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 27-May-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Bank account which holds all the records of collection of fees</h3>
+For creating new Fee collection head Create a new Account. Add account name, Select Company name, Currency type. Select Balance type (Debit or Credit), Select Parent account type (Income account or Expenses account). After Creating head verify it in Company Cost center, while creating new Fee slip under Accounting Section select income account in which you want to add new fees.
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 28-May-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Enable Disable Students on the basis of their Fee Status</h3>
+
+Requirement is that we need  to remove the access from those students whose Fee satatus is overdue For this purpose First of all we fetched all the students from the fee list whose status is unpaid.
+
+```py
+@frappe.whitelist()
+def get_over_due():
+    due = frappe.db.sql(f""" SELECT name,student,student_name,academic_year,due_date,outstanding_amount  FROM `tabFees` where due_date <= '{today()}' and outstanding_amount > 0 """,as_dict = True)
+    return due
+
+@frappe.whitelist()
+def get_paid():
+    paid = frappe.db.sql(f""" SELECT name,student,student_name,academic_year,due_date,outstanding_amount  FROM `tabFees` where  outstanding_amount = 0 """,as_dict = True)
+    return paid
+```
+
+and then use this fetched data to make the students disable the access from the LMS systm.
+```js
+frappe.listview_settings["Student"] = {
+  add_fields: ["title", "name", "gender"],
+  // set default filters
+
+  before_render(doc) {
+    console.log("y");
+
+    // triggers before every render of list records
+  },
+  get_indicator(doc, frm) {
+
+    if (doc.enabled == 1) {
+      frappe.call({
+        method: "ERPGuru.education.api.get_over_due",
+        callback: function (r) {
+          if (r) {
+            $.each(r.message, function (i, d) {
+              if ((i, d.student === doc.name)) {
+                frappe.call({
+                  method: "frappe.client.set_value",
+                  args: {
+                    doctype: "Student",
+                    name: doc.name,
+                    fieldname: "enabled",
+                    value: 0,
+                  },
+                  freeze: true,
+                  callback: function (r) {
+                    frappe.msgprint(
+                      __(
+                        `Student ${doc.title} has been Disable from Access because of overdue fee`
+                      )
+                    },
+        
+```
+
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 30-May-2022**
-<h3 align='center'></h3>
+**Date : 28-May-2022**
+<h3 align='center'>Dashboard for ERPGURU</h3>
+
+- Now we have to create a new dashboard page according to the rquirement specified by Mentor.
+- There should be links of Student, Program, Fee, Attendance etc. After clicking, it would ask for login.
+- So we explored about this and create a new webpage. (Go to Website > Webpage then create new webpage)
+- Enter Title, Route etc. Select HTML in Content Type.
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 31-May-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Exploring OAuth 2 </h3>
+
+OAuth 2.0, which stands for “Open Authorization”, is a standard designed to allow a website or application to access resources hosted by other web apps on behalf of a user. OAuth 2.0 provides consented access and restricts actions of what the client app can perform on resources on behalf of the user, without ever sharing the user's credentials. Although the web is the main platform for OAuth 2, the specification also describes how to handle this kind of delegated access to other client types (browser-based applications, server-side web applications, native/mobile apps, connected devices, etc.)
 <br>

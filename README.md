@@ -1037,7 +1037,7 @@ frappe.listview_settings["Student"] = {
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 28-May-2022**
+**Date : 30-May-2022**
 <h3 align='center'>Dashboard for ERPGURU</h3>
 
 - Now we have to create a new dashboard page according to the rquirement specified by Mentor.
